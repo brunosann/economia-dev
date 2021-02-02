@@ -1,0 +1,48 @@
+.aside {
+  width: 230px;
+  background-color: #fff;
+  min-height: calc(100vh - 100px);
+  position: absolute;
+  left: 0;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: animeAside 0.4s forwards;
+}
+
+@keyframes animeAside {
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.boxImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.boxImg span {
+  font-size: 0.9rem;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.li {
+  padding: 15px 0px 15px 20px;
+  transition: 0.1s ease-in-out;
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.li:hover {
+  background-color: var(--primary-opacity);
+  cursor: pointer;
+  color: #fff;
+}
