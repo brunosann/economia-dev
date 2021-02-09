@@ -8,6 +8,7 @@
   list-style: none;
   --primary: #3c73b9;
   --primary-opacity: rgba(60, 115, 185, 0.8);
+  --spacing: 30px;
 }
 
 body {
@@ -22,4 +23,10 @@ body {
 
 .mt {
   margin-top: 100px;
+}
+
+@media (max-width: 500px) {
+  * {
+    --spacing: 15px;
+  }
 }

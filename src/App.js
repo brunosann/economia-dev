@@ -3,8 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Aside from "./components/aside/Aside";
 import Header from "./components/header/Header";
-import Home from "./components/home/Home";
+import Dashboard from "./components/dashboard/Dashboard";
 import { GlobalStorage } from "./GlobalStorage";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
         <Aside />
         <div className="container mt">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Dashboard />} />
           </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
     </GlobalStorage>
   );

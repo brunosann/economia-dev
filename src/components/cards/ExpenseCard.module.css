@@ -1,0 +1,50 @@
+.article {
+  background-color: #fff;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.listItem {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
+  padding-bottom: 4px;
+}
+
+.info,
+.money {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info span,
+.money span {
+  font-size: 14px;
+  color: #333;
+}
+
+.info span:nth-child(2) {
+  font-size: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-opacity);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}

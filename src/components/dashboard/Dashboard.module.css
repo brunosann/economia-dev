@@ -1,0 +1,27 @@
+.main {
+  padding-top: var(--spacing);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: var(--spacing);
+  gap: var(--spacing);
+}
+
+.expenseCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing);
+  margin-top: var(--spacing);
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .expenseCards {
+    grid-template-columns: 1fr;
+  }
+}

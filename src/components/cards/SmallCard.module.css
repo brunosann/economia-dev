@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  height: 110px;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.boxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 50px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.boxIcon svg {
+  font-size: 2.25rem;
+}
+
+.boxCardMoney {
+  text-align: right;
+}
+
+.boxCardMoney p:first-child {
+  color: #333;
+  font-weight: 600;
+}
