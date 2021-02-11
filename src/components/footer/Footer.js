@@ -6,7 +6,10 @@ const Footer = () => {
     <footer className={styles.footer}>
       <p> &copy; Todos os direitos reservados</p>
       <p>
-        Desenvolvido por <a href="https://devteixeira.com/">DevTeixeira</a>{" "}
+        Desenvolvido por{" "}
+        <a target="_blank" rel="noreferrer" href="https://devteixeira.com/">
+          DevTeixeira
+        </a>{" "}
       </p>
     </footer>
   );

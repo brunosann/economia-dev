@@ -9,6 +9,7 @@
   --primary: #3c73b9;
   --primary-opacity: rgba(60, 115, 185, 0.8);
   --spacing: 30px;
+  box-sizing: border-box;
 }
 
 body {

@@ -1,5 +1,5 @@
 .main {
-  padding-top: var(--spacing);
+  padding: var(--spacing) 0;
 }
 
 .cards {
