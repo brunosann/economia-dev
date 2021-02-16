@@ -9,13 +9,22 @@ import {
 } from "react-icons/fa";
 import ExpenseCard from "../cards/ExpenseCard";
 import ChartCard from "../cards/ChartCard";
+import Modal from "../modal/Modal";
+import { GlobalContext } from "../../GlobalStorage";
 
 const Dashboard = () => {
+  const { modal } = React.useContext(GlobalContext);
+
   return (
     <main className={styles.main}>
+      {modal && <Modal text="Despesa" action="submitExpense" />}
       <section>
-        <Button modal="receita">Nova Receita</Button>
-        <Button modal="receita">Nova Despesa</Button>
+        <Button text="Receita" action="submitRecipe">
+          Nova Receita
+        </Button>
+        <Button text="Despesa" action="submitExpense">
+          Nova Despesa
+        </Button>
       </section>
       <section className={styles.cards}>
         <Card color="#3C73B9" text="Saldo Atual" icon={<FaCommentDollar />} />

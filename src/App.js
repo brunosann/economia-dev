@@ -14,6 +14,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Aside />
+        <div className="shadow"></div>
         <div className="container mt">
           <Routes>
             <Route path="/" element={<Dashboard />} />

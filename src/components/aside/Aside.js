@@ -3,9 +3,9 @@ import { GlobalContext } from "../../GlobalStorage";
 import styles from "./Aside.module.css";
 
 const Aside = () => {
-  const { modal } = React.useContext(GlobalContext);
+  const { aside } = React.useContext(GlobalContext);
 
-  if (!modal) return null;
+  if (!aside) return null;
 
   return (
     <aside className={styles.aside}>

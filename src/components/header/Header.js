@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { GlobalContext } from "../../GlobalStorage";
 
 const Header = () => {
-  const { setModal, modal } = React.useContext(GlobalContext);
+  const { setAside, aside } = React.useContext(GlobalContext);
 
   return (
     <header className={styles.header}>
@@ -19,7 +19,7 @@ const Header = () => {
         <div className={styles.menu}>
           <GoThreeBars
             className={styles.icon}
-            onClick={() => setModal(!modal)}
+            onClick={() => setAside(!aside)}
           />
         </div>
       </nav>

@@ -31,3 +31,17 @@ body {
     --spacing: 15px;
   }
 }
+
+.shadow {
+  display: none;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.shadow.active {
+  display: block;
+}
