@@ -1,4 +1,4 @@
 # Econimia dev
 
-- Projeto de gestor de gastos
+- Projeto de gestão de gastos
   <!-- [projeto](https://devteixeira.com/). -->
